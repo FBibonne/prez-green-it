@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          fridge:
+            url: http://default/steak
+            connectTimeout: 5000
+            loggerLevel: full
+            defaultRequestHeaders:
+              header-test: test
+            micrometer:
+              enabled: false
+      okhttp:
+        enabled: true
+
